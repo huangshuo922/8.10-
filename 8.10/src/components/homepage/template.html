@@ -1,0 +1,108 @@
+<el-container>
+    <el-header>
+        鸿合业务协作系统后台
+        <span class="admin">
+            <a>默认管理员</a>
+        </span>
+    </el-header>
+    <el-container>
+        <el-aside width="200px" class="asideBox">
+            <el-col :span="12">
+                <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="white"
+                    text-color="balck" active-text-color="#317eeb">
+                    <el-submenu index="1">
+                        <template slot="title" class="titlePosition">
+                            <i class="el-icon-message"></i>
+                            <span>用户权限管理</span>
+                        </template>
+                        <el-menu-item-group>
+                            <el-menu-item index="1-1">
+                                <a href="javascript:;">组织结构</a>
+                            </el-menu-item>
+                            <el-menu-item index="1-2">
+                                <a href="#/RoleManagement">角色管理</a>
+                            </el-menu-item>
+                            <el-menu-item index="1-3">
+                                <a href="javascript:;">用户管理</a>
+                            </el-menu-item>
+                            <el-menu-item index="1-4">
+                                <a href="javascript:;">菜单管理</a>
+                            </el-menu-item>
+                        </el-menu-item-group>
+                       
+                    </el-submenu>
+                    <el-submenu index="2">
+                        <template slot="title" class="titlePosition">
+                            <i class="el-icon-message"></i>
+                            <span>配置管理</span>
+                        </template>
+                        <el-menu-item-group>
+                            <el-menu-item index="2-1"><a href="#/echarts">SAP链接</a></el-menu-item>
+                            <el-menu-item index="2-2">计划任务</el-menu-item>
+                        </el-menu-item-group>
+                       
+                    </el-submenu>
+                    <el-submenu index="3">
+                        <template slot="title" class="titlePosition">
+                            <i class="el-icon-message"></i>
+                            <span>基础主数据</span>
+                        </template>
+                        <el-menu-item-group>
+                            <el-menu-item index="3-1">客户</el-menu-item>
+                            <el-menu-item index="3-2">物料</el-menu-item>
+                        </el-menu-item-group>
+                       
+                    </el-submenu>
+                    <el-submenu index="4">
+                        <template slot="title" class="titlePosition">
+                            <i class="el-icon-message"></i>
+                            <span>阶段设计</span>
+                        </template>
+
+                       
+                    </el-submenu>
+                    <el-submenu index="5">
+                        <template slot="title" class="titlePosition">
+                            <i class="el-icon-message"></i>
+                            <span>流程设计</span>
+                        </template>
+                        <el-menu-item-group>
+                            <el-menu-item index="5-1">分类设置</el-menu-item>
+                        </el-menu-item-group>
+                        <el-menu-item-group>
+                            <el-menu-item index="5-2">表单管理</el-menu-item>
+                        </el-menu-item-group>
+                        <el-menu-item-group>
+                            <el-menu-item index="5-3">流程设计</el-menu-item>
+                        </el-menu-item-group>
+                        <el-menu-item-group>
+                            <el-menu-item index="5-4">流程监控</el-menu-item>
+                        </el-menu-item-group>
+                        <el-menu-item-group>
+                            <el-menu-item index="5-5">流程代理</el-menu-item>
+                        </el-menu-item-group>
+                       
+                    </el-submenu>
+                    <el-submenu index="6">
+                        <template slot="title" class="titlePosition">
+                            <i class="el-icon-message"></i>
+                            <span>系统管理</span>
+                        </template>
+                        <el-menu-item-group>
+                            <el-menu-item index="6-1">系统设置</el-menu-item>
+                        </el-menu-item-group>
+                        <el-menu-item-group>
+                            <el-menu-item index="6-2">在线用户</el-menu-item>
+                        </el-menu-item-group>
+                       
+                    </el-submenu>
+                    
+                </el-menu>
+            </el-col>
+            </el-row>
+        </el-aside>
+        <el-main>
+            <router-view></router-view>
+        </el-main>
+    </el-container>
+</el-container>

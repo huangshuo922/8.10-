@@ -1,0 +1,53 @@
+.el-header, .el-footer {
+    background-color: #363d4c;
+    color: white;
+    text-align: left;
+    line-height: 60px;
+    font-size: 26px
+  }
+  body , html , .aside , #app , .el-container , .asideHeight {
+    height: 100%;
+}
+  .admin {
+    float: right;
+    margin-right: 20px;
+  }
+  .admin a {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+    background-color: white;
+  }
+  
+  .el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+  }
+  
+  body > .el-container {
+    margin-bottom: 40px;
+  }
+  
+  .el-icon-location {
+    margin-left: -20px;
+  }
+  .el-submenu {
+    width: 200px;
+  }
+.asideBox .el-submenu {
+  text-align: left;
+}
+.asideBox .el-submenu__title {
+  padding-left: 40px !important;
+}
+.asideBox .el-menu-item {
+  text-align: center;
+}
